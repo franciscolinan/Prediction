@@ -2,7 +2,7 @@
 
 namespace prediction
 {
-	auto Intercept(const Vector3& src, const Vector3& dst, const Vector3& dst_velocity, const float missile_speed, const float start_time) -> std::optional<Vector3>
+	auto Predict(const Vector3& src, const Vector3& dst, const Vector3& dst_velocity, const float missile_speed, const float start_time) -> std::optional<Vector3>
 	{
 		//Given source position, target position, target velocity and missile speed
 		//if missile can collide with target, returns collision position
