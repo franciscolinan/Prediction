@@ -13,8 +13,4 @@ This C++ source file provides an efficient implementation of 2D movement predict
 - Efficient and simple in just one formula
 
 ## Math Behind the Prediction
-The movement prediction algorithm is based on physics and mathematics principles, taking into account the target's velocity, launch delay, and, if applicable, its non-linear movement along a list of points. The algorithm calculates the optimal launch position that will intersect with the predicted target position.
-
-The algorithm also returns std::nullopt if the missile cannot hit the target.
-
 Raises the equation of a circle whose radius is expressed according to time (this formula represents all the possible points where the missile could be launched at) and then express the enemy position according to time (where the enemy would be at "x" time). Express the circle radius as (time - start_time) * speed to take into consideration missile delay and the enemy's next start position's time (when enemy is moving to a list of points). Use the distance formula from a point to a circle and replace the previous formulas in it. This equation should give you the point where you should launch the skillshot perfecly, it would even tell you if the enemy is impossible to be hit.
