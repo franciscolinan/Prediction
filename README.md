@@ -1,4 +1,4 @@
-# Efficient 2D Movement Prediction for Missile Launch in C++
+# Efficient 2D Movement Prediction for Missile Launch
 
 ## Description
 
